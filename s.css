@@ -5,9 +5,9 @@ html,body {
     padding: 0;
 }
 
-.main_container {
-    width: 95%; 
-    height: 95%;
+.main-container {
+    width: 96%; 
+    height: 96%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 200px);
@@ -16,7 +16,7 @@ html,body {
 
 .gallery-item {
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 9px;
     box-shadow:  rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
@@ -25,6 +25,10 @@ html,body {
     height: 100%; 
     object-fit: cover; 
     transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
 }
 
 .gallery-item:hover img {
